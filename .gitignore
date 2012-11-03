@@ -1,0 +1,11 @@
+bin/
+Bin/
+obj/
+_ReSharper*/
+*.Cache
+*.cache
+*.dotCover
+*.user
+*.suo
+*.orig
+packages/

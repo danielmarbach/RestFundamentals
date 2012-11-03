@@ -1,0 +1,17 @@
+﻿@handler Restaurant.GetMenu
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Menu</title>
+    </head>
+    <body>
+        <h1>Menu</h1>
+        <ul id="list">
+            @foreach (var item in @Handler.Output)
+            {
+                <li>@item.Name: @item.Price</li>
+            }
+        </ul> 
+    </body>
+</html>
