@@ -5,6 +5,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Restaurant", "Restaurant", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Restaurant", "Restaurant\Restaurant.csproj", "{9777C461-B8BF-4BE4-8D0C-793B26109144}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Backlog", "Backlog", "{958E0D6B-53EE-4221-A1AE-A31723294120}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Backlog", "Backlog\Backlog.csproj", "{2F91BC1D-BB48-4329-BE3D-416831723FEA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,11 +19,16 @@ Global
 		{9777C461-B8BF-4BE4-8D0C-793B26109144}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9777C461-B8BF-4BE4-8D0C-793B26109144}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9777C461-B8BF-4BE4-8D0C-793B26109144}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2F91BC1D-BB48-4329-BE3D-416831723FEA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2F91BC1D-BB48-4329-BE3D-416831723FEA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2F91BC1D-BB48-4329-BE3D-416831723FEA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2F91BC1D-BB48-4329-BE3D-416831723FEA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{9777C461-B8BF-4BE4-8D0C-793B26109144} = {DE0211B6-30F3-4F39-BE35-4D23D06A2B8A}
+		{2F91BC1D-BB48-4329-BE3D-416831723FEA} = {958E0D6B-53EE-4221-A1AE-A31723294120}
 	EndGlobalSection
 EndGlobal
