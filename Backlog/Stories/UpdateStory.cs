@@ -1,8 +1,10 @@
 namespace Backlog.Stories
 {
     using Simple.Web;
+    using Simple.Web.Links;
 
     [UriTemplate("/stories/{Id}")]
+    [LinksFrom(typeof(Story), "/stories/{Id}")]
     public class UpdateStory : IPut<Story>
     {
         public Status Put(Story input)
