@@ -7,7 +7,7 @@ namespace Backlog.Stories
     [UriTemplate("/stories")]
     // This doesn't work yet, but it will in 0.6
     [LinksFrom(typeof(ICollection<Story>), "/stories", Rel = "post")]
-    public class NewStory : IPost<NewStoryModel>
+    public class PostStory : IPost<NewStoryModel>
     {
         public Status Post(NewStoryModel input)
         {

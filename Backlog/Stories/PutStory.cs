@@ -5,7 +5,7 @@ namespace Backlog.Stories
 
     [UriTemplate("/stories/{Id}")]
     [LinksFrom(typeof(Story), "/stories/{Id}", Rel = "story update")]
-    public class UpdateStory : IPut<UpdateStoryModel>
+    public class PutStory : IPut<UpdateStoryModel>
     {
         public Status Put(UpdateStoryModel input)
         {

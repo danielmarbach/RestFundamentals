@@ -5,7 +5,7 @@ namespace Backlog.Stories
 
     [UriTemplate("/stories/{Id}")]
     [LinksFrom(typeof(Story), "/stories/{Id}", Rel = "story remove")]
-    public class RemoveStory : IDelete
+    public class DeleteStory : IDelete
     {
         public Status Delete()
         {
