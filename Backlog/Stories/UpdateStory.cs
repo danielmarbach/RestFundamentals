@@ -4,10 +4,10 @@ namespace Backlog.Stories
     using Simple.Web.Links;
 
     [UriTemplate("/stories/{Id}")]
-    [LinksFrom(typeof(Story), "/stories/{Id}")]
-    public class UpdateStory : IPut<Story>
+    [LinksFrom(typeof(Story), "/stories/{Id}", Rel = "story update")]
+    public class UpdateStory : IPut<UpdateStoryModel>
     {
-        public Status Put(Story input)
+        public Status Put(UpdateStoryModel input)
         {
             var story = Stories.By(this.Id);
 
@@ -16,11 +16,9 @@ namespace Backlog.Stories
                 return 404;
             }
 
-            story.Text = input.Text;
+            Stories.Save(story.From(input));
 
-            Stories.Update(story);
-            
-            return 201;
+            return 200;
         }
 
         public int Id { get; set; }

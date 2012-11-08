@@ -57,20 +57,25 @@
       <Private>True</Private>
       <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
     </Reference>
-    <Reference Include="Simple.Web">
-      <HintPath>..\packages\Simple.Web.0.5.3.1\lib\net40\Simple.Web.dll</HintPath>
+    <Reference Include="Simple.Web, Version=0.5.3.1, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Simple.Web.0.6.0.6\lib\net40\Simple.Web.dll</HintPath>
     </Reference>
-    <Reference Include="Simple.Web.AspNet">
-      <HintPath>..\packages\Simple.Web.AspNet.0.5.3.1\lib\net40\Simple.Web.AspNet.dll</HintPath>
+    <Reference Include="Simple.Web.AspNet, Version=0.5.3.1, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Simple.Web.AspNet.0.6.0.6\lib\net40\Simple.Web.AspNet.dll</HintPath>
     </Reference>
-    <Reference Include="Simple.Web.JsonFx">
-      <HintPath>..\packages\Simple.Web.0.5.3.1\lib\net40\Simple.Web.JsonFx.dll</HintPath>
+    <Reference Include="Simple.Web.JsonFx, Version=0.5.3.1, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Simple.Web.0.6.0.6\lib\net40\Simple.Web.JsonFx.dll</HintPath>
     </Reference>
-    <Reference Include="Simple.Web.Razor">
-      <HintPath>..\packages\Simple.Web.Razor.0.5.3.1\lib\net40\Simple.Web.Razor.dll</HintPath>
+    <Reference Include="Simple.Web.Razor, Version=0.5.3.1, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Simple.Web.Razor.0.6.0.6\lib\net40\Simple.Web.Razor.dll</HintPath>
     </Reference>
-    <Reference Include="Simple.Web.Xml">
-      <HintPath>..\packages\Simple.Web.0.5.3.1\lib\net40\Simple.Web.Xml.dll</HintPath>
+    <Reference Include="Simple.Web.Xml, Version=0.5.3.1, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Simple.Web.0.6.0.6\lib\net40\Simple.Web.Xml.dll</HintPath>
     </Reference>
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
@@ -119,6 +124,7 @@
     <Compile Include="Stories\GetStories.cs" />
     <Compile Include="Stories\GetStory.cs" />
     <Compile Include="Stories\NewStory.cs" />
+    <Compile Include="Stories\RemoveStory.cs" />
     <Compile Include="Stories\Stories.cs" />
     <Compile Include="Stories\Story.cs" />
     <Compile Include="Stories\UpdateStory.cs" />

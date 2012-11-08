@@ -2,23 +2,33 @@
 {
     using System.Collections.Concurrent;
     using System.Collections.Generic;
+    using System.Threading;
 
     using Simple.Web;
 
+    using System.Linq;
+
     public class Stories : IStartupTask
     {
-        private static readonly IDictionary<int, Story> stories = new ConcurrentDictionary<int, Story>();
+        private static int currentStoryId;
+
+        private static readonly ConcurrentDictionary<int, Story> stories = new ConcurrentDictionary<int, Story>();
 
         public void Run(IConfiguration configuration, IWebEnvironment environment)
         {
-            stories.Add(1, new Story { Id = 1, Text = "As a user..."});
-            stories.Add(2, new Story { Id = 2, Text = "As a operator..." });
-            stories.Add(3, new Story { Id = 3, Text = "As a administrator..."});
+            Save(new Story { Id = 1, Text = "As a user..."});
+            Save(new Story { Id = 2, Text = "As a operator..." });
+            Save(new Story { Id = 3, Text = "As a administrator..." });
         }
 
         public static IEnumerable<Story> All()
         {
             return stories.Values;
+        }
+
+        public static Story New()
+        {
+            return new Story { Id = Interlocked.Add(ref currentStoryId, 1) };
         }
 
         public static Story By(int id)
@@ -28,9 +38,15 @@
             return value;
         }
 
-        public static void Update(Story story)
+        public static void Save(Story story)
         {
-            stories[story.Id] = story;
+            stories.AddOrUpdate(story.Id, story, (id, old) => story);
+        }
+
+        public static void Delete(int id)
+        {
+            Story story;
+            stories.TryRemove(id, out story);
         }
     }
 }
