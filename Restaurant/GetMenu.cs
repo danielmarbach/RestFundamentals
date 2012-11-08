@@ -2,6 +2,8 @@ namespace Restaurant
 {
     using System;
     using System.Collections.Generic;
+    using System.Drawing.Imaging;
+    using System.IO;
 
     using Simple.Web;
     using Simple.Web.Behaviors;
@@ -24,8 +26,15 @@ namespace Restaurant
   
             this.Output = new List<MenuItem>
                 {
-                    new MenuItem { Name = "Latte", Price = 5.50m },
-                    new MenuItem { Name = "Espresso", Price = 4.20m },
+                    new MenuItem { Name = "Assorted Dry Cereals", Price = 5.50m },
+                    new MenuItem { Name = "Steamed Wheat", Price = 4.20m },
+                    new MenuItem { Name = "1 Scrambled Egg", Price = 1.50m },
+                    new MenuItem { Name = "2 Milk", Price = 2.65m },
+                    new MenuItem { Name = "Stewed Fruit", Price = 1m },
+                    new MenuItem { Name = "Toast", Price = 1m },
+                    new MenuItem { Name = "Bread", Price = 1m },
+                    new MenuItem { Name = "Butter", Price = 0.50m },
+                    new MenuItem { Name = "Coffee", Price = 4.20m },
                 };
         }
 
@@ -41,6 +50,33 @@ namespace Restaurant
         public DateTime? LastModified { get; private set; }
 
         public CacheOptions CacheOptions { get; private set; }
+    }
+
+    [UriTemplate("/menu")]
+    [RespondsWith("image/png")]
+    public class GetMenuAsImage : IGet, IOutputStream
+    {
+        public string ContentType
+        {
+            get { return "image/png"; }
+        }
+
+        public string ContentDisposition { get; private set; }
+
+        public Stream Output
+        {
+            get
+            {
+                var stream = new MemoryStream();
+                Menu.menu.Save(stream, ImageFormat.Png);
+                return stream;
+            }
+        }
+
+        public Status Get()
+        {
+            return 200;
+        }
     }
 
     public class MenuItem
