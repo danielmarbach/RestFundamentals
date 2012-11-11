@@ -9,7 +9,9 @@ namespace Backlog.Stories
     {
         public Status Post(NewStoryModel input)
         {
-            Stories.Save(Stories.New().From(input));
+            Story story = Stories.New().From(input);
+
+            Stories.Save(story);
 
             return Status.Created;
         }
