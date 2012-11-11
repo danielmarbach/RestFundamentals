@@ -1,13 +1,13 @@
-namespace Backlog.Stories
+namespace Backlog.Stories.Backlog
 {
     using Simple.Web;
     using Simple.Web.Links;
 
-    [UriTemplate("/stories/{Id}")]
-    [LinksFrom(typeof(Story), "/stories/{Id}", Rel = "story update")]
-    public class PutStory : IPut<UpdateStoryModel>
+    [UriTemplate(BacklogUri.Backlog + "/{Id}")]
+    [LinksFrom(typeof(BacklogStory), BacklogUri.Backlog + "/{Id}", Rel = "story update")]
+    public class ModifyBacklogStory : IPut<BacklogUpdate>
     {
-        public Status Put(UpdateStoryModel input)
+        public Status Put(BacklogUpdate input)
         {
             var story = Stories.By(this.Id);
 

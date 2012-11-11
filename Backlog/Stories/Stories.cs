@@ -17,11 +17,11 @@
         public void Run(IConfiguration configuration, IWebEnvironment environment)
         {
             Save(new Story { Id = 1, Text = "As a user..."});
-            Save(new Story { Id = 2, Text = "As a operator...", State = State.WorkInProgress });
+            Save(new Story { Id = 2, Text = "As a operator...", State = StoryState.Wip });
             Save(new Story { Id = 3, Text = "As a administrator..." });
         }
 
-        public static IEnumerable<Story> In(State state)
+        public static IEnumerable<Story> In(StoryState state)
         {
             return All()
                 .Where(s => s.State == state);
