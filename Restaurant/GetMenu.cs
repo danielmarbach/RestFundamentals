@@ -16,10 +16,9 @@ namespace Restaurant
         {
             var utcNow = DateTime.UtcNow;
 
-            this.LastModified = new DateTime(utcNow.Year, utcNow.Month, utcNow.Day, 0, 0, 0, DateTimeKind.Utc);
-            this.IfModifiedSince = new DateTime(utcNow.Year, utcNow.Month, utcNow.Day, 1, 0, 0, DateTimeKind.Utc);
+            this.LastModified = utcNow.Subtract(TimeSpan.FromDays(2));
 
-            this.CacheOptions = new CacheOptions(this.LastModified.Value.Add(TimeSpan.FromDays(1)))
+            this.CacheOptions = new CacheOptions(utcNow.Add(TimeSpan.FromDays(1)))
                 {
                     Level = CacheLevel.Private
                 };
@@ -40,6 +39,11 @@ namespace Restaurant
 
         public Status Get()
         {
+            if (this.IfModifiedSince.HasValue && this.IfModifiedSince.Value > this.LastModified)
+            {
+                return 304;
+            }
+
             return 200;
         }
 
