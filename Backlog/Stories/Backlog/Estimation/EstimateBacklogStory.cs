@@ -1,4 +1,4 @@
-namespace Backlog.Stories.Backlog
+namespace Backlog.Stories.Backlog.Estimation
 {
     using Simple.Web;
     using Simple.Web.Links;
@@ -9,11 +9,16 @@ namespace Backlog.Stories.Backlog
     {
         public Status Put(Estimation input)
         {
-            var story = Stories.By(this.Id).Estimate(input.Points);
+            var story = Stories.By(this.Id);
 
-            Stories.Save(story);
+            if (story == null)
+            {
+                return 404;
+            }
 
-            return Status.SeeOther(BacklogUri.Backlog); ;
+            Stories.Save(story.Estimate(input.Points));
+
+            return Status.SeeOther(BacklogUri.Backlog);
         }
 
         public int Id { get; set; }

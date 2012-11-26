@@ -6,9 +6,9 @@ namespace Backlog.Stories.Done
 
     [UriTemplate(DoneUri.Done)]
     [LinksFrom(typeof(StoryOperations), DoneUri.Done, Rel = "stories done")]
-    public class GetDoneStories : IGet, IOutput<DoneStories>
+    public class DoneIndex : IGet, IOutput<DoneStories>
     {
-        public GetDoneStories()
+        public DoneIndex()
         {
             this.Output = new DoneStories(Stories.In(StoryState.Done));
         }

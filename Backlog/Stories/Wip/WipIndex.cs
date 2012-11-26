@@ -6,9 +6,9 @@ namespace Backlog.Stories.Wip
 
     [UriTemplate("/stories/wip")]
     [LinksFrom(typeof(StoryOperations), "/stories/wip", Rel = "stories wip")]
-    public class GetWipStories : IGet, IOutput<WipStories>
+    public class WipIndex : IGet, IOutput<WipStories>
     {
-        public GetWipStories()
+        public WipIndex()
         {
             this.Output = Stories.In(StoryState.Wip).To();
         }

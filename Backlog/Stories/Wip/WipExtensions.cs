@@ -20,12 +20,5 @@
                 Text = story.Text,
             };
         }
-
-        public static Story Next(this Story story)
-        {
-            story.State = StoryState.Done;
-
-            return story;
-        }
     }
 }

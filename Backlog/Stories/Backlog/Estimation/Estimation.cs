@@ -1,4 +1,4 @@
-namespace Backlog.Stories.Backlog
+namespace Backlog.Stories.Backlog.Estimation
 {
     public class Estimation
     {

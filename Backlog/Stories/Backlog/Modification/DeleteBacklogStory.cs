@@ -1,4 +1,4 @@
-namespace Backlog.Stories.Backlog
+namespace Backlog.Stories.Backlog.Modification
 {
     using Simple.Web;
     using Simple.Web.Links;

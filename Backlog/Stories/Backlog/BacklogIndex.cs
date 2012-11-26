@@ -6,9 +6,9 @@
 
     [UriTemplate(BacklogUri.Backlog)]
     [LinksFrom(typeof(StoryOperations), BacklogUri.Backlog, Rel = "stories backlog")]
-    public class GetBacklogStories : IGet, IOutput<BacklogStories>
+    public class BacklogIndex : IGet, IOutput<BacklogStories>
     {
-        public GetBacklogStories()
+        public BacklogIndex()
         {
             this.Output = Stories.In(StoryState.Backlog).To();
         }
