@@ -40,11 +40,13 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Fix">
-      <HintPath>..\packages\Fix.0.2\lib\net40\Fix.dll</HintPath>
+    <Reference Include="Fix, Version=0.3.0.7, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Fix.0.3.0.7\lib\net40\Fix.dll</HintPath>
     </Reference>
-    <Reference Include="Fix.AspNet">
-      <HintPath>..\packages\Fix.AspNet.0.2\lib\net40\Fix.AspNet.dll</HintPath>
+    <Reference Include="Fix.AspNet, Version=0.3.0.7, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Fix.AspNet.0.3.0.7\lib\net40\Fix.AspNet.dll</HintPath>
     </Reference>
     <Reference Include="Inflector">
       <HintPath>..\packages\Inflector.1.0.0.0\lib\net45\Inflector.dll</HintPath>
@@ -59,23 +61,23 @@
     </Reference>
     <Reference Include="Simple.Web, Version=0.5.3.1, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\Simple.Web.0.6.0.6\lib\net40\Simple.Web.dll</HintPath>
+      <HintPath>..\packages\Simple.Web.0.6.0.7\lib\net40\Simple.Web.dll</HintPath>
     </Reference>
     <Reference Include="Simple.Web.AspNet, Version=0.5.3.1, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\Simple.Web.AspNet.0.6.0.6\lib\net40\Simple.Web.AspNet.dll</HintPath>
+      <HintPath>..\packages\Simple.Web.AspNet.0.6.0.7\lib\net40\Simple.Web.AspNet.dll</HintPath>
     </Reference>
     <Reference Include="Simple.Web.JsonFx, Version=0.5.3.1, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\Simple.Web.0.6.0.6\lib\net40\Simple.Web.JsonFx.dll</HintPath>
+      <HintPath>..\packages\Simple.Web.0.6.0.7\lib\net40\Simple.Web.JsonFx.dll</HintPath>
     </Reference>
     <Reference Include="Simple.Web.Razor, Version=0.5.3.1, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\Simple.Web.Razor.0.6.0.6\lib\net40\Simple.Web.Razor.dll</HintPath>
+      <HintPath>..\packages\Simple.Web.Razor.0.6.0.7\lib\net40\Simple.Web.Razor.dll</HintPath>
     </Reference>
     <Reference Include="Simple.Web.Xml, Version=0.5.3.1, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\Simple.Web.0.6.0.6\lib\net40\Simple.Web.Xml.dll</HintPath>
+      <HintPath>..\packages\Simple.Web.0.6.0.7\lib\net40\Simple.Web.Xml.dll</HintPath>
     </Reference>
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
