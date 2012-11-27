@@ -44,6 +44,18 @@
             return value;
         }
 
+        public static Story By(int id, StoryState state)
+        {
+            Story value = By(id);
+
+            if(value != null && value.State == state)
+            {
+                return value;
+            }
+
+            return null;
+        }
+
         public static void Save(Story story)
         {
             stories.AddOrUpdate(story.Id, story, (id, old) => story);

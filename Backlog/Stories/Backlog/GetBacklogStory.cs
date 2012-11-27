@@ -10,7 +10,7 @@
     {
         public Status Get()
         {
-            var story = Stories.By(this.Id);
+            var story = Stories.By(this.Id, StoryState.Backlog);
 
             if (story == null)
             {
