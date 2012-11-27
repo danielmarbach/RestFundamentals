@@ -148,6 +148,7 @@
     <Compile Include="Stories\Backlog\BacklogIndex.cs" />
     <Compile Include="Stories\Done\GetDoneStory.cs" />
     <Compile Include="Stories\NewStoryModel.cs" />
+    <Compile Include="Stories\PostStoryOperations.cs" />
     <Compile Include="Stories\StoriesIndex.cs" />
     <Compile Include="Stories\StoryExtensions.cs" />
     <Compile Include="Stories\StoryState.cs" />
