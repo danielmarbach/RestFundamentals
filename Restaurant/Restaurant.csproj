@@ -43,45 +43,38 @@
     <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Fix, Version=0.3.0.7, Culture=neutral, processorArchitecture=MSIL">
+    <Reference Include="Fix, Version=0.3.3.13, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\Fix.0.3.0.7\lib\net40\Fix.dll</HintPath>
+      <HintPath>..\packages\Fix.0.3.3.13\lib\net40\Fix.dll</HintPath>
     </Reference>
-    <Reference Include="Fix.AspNet, Version=0.3.0.7, Culture=neutral, processorArchitecture=MSIL">
+    <Reference Include="Fix.AspNet, Version=0.3.3.13, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\Fix.AspNet.0.3.0.7\lib\net40\Fix.AspNet.dll</HintPath>
+      <HintPath>..\packages\Fix.AspNet.0.3.3.13\lib\net40\Fix.AspNet.dll</HintPath>
     </Reference>
     <Reference Include="Inflector">
       <HintPath>..\packages\Inflector.1.0.0.0\lib\net45\Inflector.dll</HintPath>
     </Reference>
-    <Reference Include="JsonFx, Version=2.0.1209.2802, Culture=neutral, PublicKeyToken=315052dd637f8a52, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
+    <Reference Include="JsonFx">
       <HintPath>..\packages\JsonFx.2.0.1209.2802\lib\net40\JsonFx.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
-    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <Private>True</Private>
-      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
-    </Reference>
-    <Reference Include="Simple.Web, Version=0.5.3.1, Culture=neutral, processorArchitecture=MSIL">
+    <Reference Include="Simple.Web, Version=0.6.2.52146, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\Simple.Web.0.6.0.7\lib\net40\Simple.Web.dll</HintPath>
+      <HintPath>..\packages\Simple.Web.0.6.2.52146\lib\net40\Simple.Web.dll</HintPath>
     </Reference>
-    <Reference Include="Simple.Web.AspNet, Version=0.5.3.1, Culture=neutral, processorArchitecture=MSIL">
+    <Reference Include="Simple.Web.AspNet, Version=0.6.2.52146, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\Simple.Web.AspNet.0.6.0.7\lib\net40\Simple.Web.AspNet.dll</HintPath>
+      <HintPath>..\packages\Simple.Web.AspNet.0.6.2.52146\lib\net40\Simple.Web.AspNet.dll</HintPath>
     </Reference>
-    <Reference Include="Simple.Web.JsonFx, Version=0.5.3.1, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\Simple.Web.0.6.0.7\lib\net40\Simple.Web.JsonFx.dll</HintPath>
+    <Reference Include="Simple.Web.JsonFx">
+      <HintPath>..\packages\Simple.Web.JsonFx.0.6.2.52146\lib\net40\Simple.Web.JsonFx.dll</HintPath>
     </Reference>
-    <Reference Include="Simple.Web.Razor, Version=0.5.3.1, Culture=neutral, processorArchitecture=MSIL">
+    <Reference Include="Simple.Web.Razor, Version=0.6.2.52146, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\Simple.Web.Razor.0.6.0.7\lib\net40\Simple.Web.Razor.dll</HintPath>
+      <HintPath>..\packages\Simple.Web.Razor.0.6.2.52146\lib\net40\Simple.Web.Razor.dll</HintPath>
     </Reference>
-    <Reference Include="Simple.Web.Xml, Version=0.5.3.1, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\Simple.Web.0.6.0.7\lib\net40\Simple.Web.Xml.dll</HintPath>
+    <Reference Include="Simple.Web.Xml">
+      <HintPath>..\packages\Simple.Web.Xml.0.6.2.52146\lib\net40\Simple.Web.Xml.dll</HintPath>
     </Reference>
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="System.Runtime.Serialization" />
@@ -94,25 +87,13 @@
     <Reference Include="System.Drawing" />
     <Reference Include="System.Web" />
     <Reference Include="System.Web.Extensions" />
-    <Reference Include="System.Web.Helpers, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+    <Reference Include="System.Web.Mvc, Version=4.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <Private>True</Private>
-      <HintPath>..\packages\Microsoft.AspNet.WebPages.2.0.20710.0\lib\net40\System.Web.Helpers.dll</HintPath>
+      <HintPath>..\packages\Simple.Web.Razor.0.6.2.52146\lib\net40\AspNetWebStack\System.Web.Mvc.dll</HintPath>
     </Reference>
-    <Reference Include="System.Web.Razor, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+    <Reference Include="System.Web.Razor, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <Private>True</Private>
-      <HintPath>..\packages\Microsoft.AspNet.Razor.2.0.20715.0\lib\net40\System.Web.Razor.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Web.WebPages, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <Private>True</Private>
-      <HintPath>..\packages\Microsoft.AspNet.WebPages.2.0.20710.0\lib\net40\System.Web.WebPages.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Web.WebPages.Deployment, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <Private>True</Private>
-      <HintPath>..\packages\Microsoft.AspNet.WebPages.2.0.20710.0\lib\net40\System.Web.WebPages.Deployment.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Web.WebPages.Razor, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <Private>True</Private>
-      <HintPath>..\packages\Microsoft.AspNet.WebPages.2.0.20710.0\lib\net40\System.Web.WebPages.Razor.dll</HintPath>
+      <HintPath>..\packages\Simple.Web.Razor.0.6.2.52146\lib\net40\AspNetWebStack\System.Web.Razor.dll</HintPath>
     </Reference>
     <Reference Include="System.Xml" />
     <Reference Include="System.Configuration" />
@@ -137,8 +118,8 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\Index.cshtml" />
-    <Content Include="packages.config" />
     <Content Include="Views\Menu.cshtml" />
+    <Content Include="packages.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
