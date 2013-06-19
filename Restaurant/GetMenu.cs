@@ -20,7 +20,7 @@ namespace Restaurant
 
             this.CacheOptions = new CacheOptions(utcNow.Add(TimeSpan.FromDays(1)))
                 {
-                    Level = CacheLevel.Private
+                    Level = CacheLevel.Private,
                 };
   
             this.Output = new List<MenuItem>

@@ -55,19 +55,21 @@
       <HintPath>..\packages\JsonFx.2.0.1209.2802\lib\net40\JsonFx.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
-    <Reference Include="Simple.Web, Version=0.6.2.52146, Culture=neutral, processorArchitecture=MSIL">
+    <Reference Include="Simple.Web, Version=0.7.1.83, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\Simple.Web.0.6.2.52146\lib\net40\Simple.Web.dll</HintPath>
+      <HintPath>..\packages\Simple.Web.0.7.1.83\lib\net40\Simple.Web.dll</HintPath>
     </Reference>
-    <Reference Include="Simple.Web.AspNet, Version=0.6.2.52146, Culture=neutral, processorArchitecture=MSIL">
+    <Reference Include="Simple.Web.AspNet, Version=0.7.1.83, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\Simple.Web.AspNet.0.6.2.52146\lib\net40\Simple.Web.AspNet.dll</HintPath>
+      <HintPath>..\packages\Simple.Web.AspNet.0.7.1.83\lib\net40\Simple.Web.AspNet.dll</HintPath>
     </Reference>
-    <Reference Include="Simple.Web.JsonFx">
-      <HintPath>..\packages\Simple.Web.JsonFx.0.6.2.52146\lib\net40\Simple.Web.JsonFx.dll</HintPath>
+    <Reference Include="Simple.Web.JsonFx, Version=0.7.1.83, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Simple.Web.JsonFx.0.7.1.83\lib\net40\Simple.Web.JsonFx.dll</HintPath>
     </Reference>
-    <Reference Include="Simple.Web.Xml">
-      <HintPath>..\packages\Simple.Web.Xml.0.6.2.52146\lib\net40\Simple.Web.Xml.dll</HintPath>
+    <Reference Include="Simple.Web.Xml, Version=0.7.1.83, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Simple.Web.Xml.0.7.1.83\lib\net40\Simple.Web.Xml.dll</HintPath>
     </Reference>
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
