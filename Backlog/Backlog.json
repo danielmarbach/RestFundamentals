@@ -1,0 +1,333 @@
+{	"nodes": {
+		"backlog": {
+			"requests": [{
+				"id": "477D066B-2806-4B81-A0DB-61400ECF741B",
+				"name": "1 - Backlog Index",
+				"request": {
+					"textBody": "",
+					"url": "localhost:56728/",
+					"headers": [{
+						"enabled": true,
+						"name": "Accept",
+						"value": "application/json"
+					}],
+					"url-query-params": [],
+					"protocol": "HTTP",
+					"formBody": {
+						"overrideContentType": true
+					},
+					"method": {
+						"link": "http://www.w3.org/Protocols/rfc2616/rfc2616-sec9.html#sec9.3",
+						"name": "GET"
+					},
+					"body-type": "Text",
+					"headers-type": "Form"
+				},
+				"modified": "Wed, 19 Jun 2013 22:42:01 +0200"
+			},
+			{
+				"id": "CF47527E-16B7-41FF-91E8-B28DE00B4502",
+				"name": "2 - Backlog Stories",
+				"request": {
+					"textBody": "",
+					"url": "localhost:56728/stories",
+					"headers": [{
+						"enabled": true,
+						"name": "Accept",
+						"value": "application/json"
+					}],
+					"url-query-params": [],
+					"protocol": "HTTP",
+					"formBody": {
+						"overrideContentType": true
+					},
+					"method": {
+						"link": "http://www.w3.org/Protocols/rfc2616/rfc2616-sec9.html#sec9.3",
+						"name": "GET"
+					},
+					"body-type": "Text",
+					"headers-type": "Form"
+				},
+				"modified": "Wed, 19 Jun 2013 22:42:51 +0200"
+			},
+			{
+				"id": "1190B436-3314-4B61-898A-04E1BDE34F82",
+				"name": "3 - Backlog Stories New",
+				"request": {
+					"textBody": "{\n \"Text\": \"As a bbv forum user...\",\n \"Rank\": \"1\"\n}",
+					"url": "localhost:56728/stories",
+					"headers": [{
+						"enabled": true,
+						"name": "Accept",
+						"value": "application/json"
+					},
+					{
+						"enabled": true,
+						"name": "Content-Type",
+						"value": "application/json"
+					}],
+					"url-query-params": [],
+					"protocol": "HTTP",
+					"formBody": {
+						"overrideContentType": true
+					},
+					"method": {
+						"requestBody": true,
+						"link": "http://www.w3.org/Protocols/rfc2616/rfc2616-sec9.html#sec9.5",
+						"name": "POST"
+					},
+					"body-type": "Text",
+					"headers-type": "Form"
+				},
+				"modified": "Wed, 19 Jun 2013 22:44:32 +0200"
+			},
+			{
+				"id": "1B74DB21-C2B9-41C9-8ABC-2039B1266C61",
+				"name": "4 - Backlog Stories Created",
+				"request": {
+					"textBody": "{\n \"Text\": \"As a bbv forum user...\",\n \"Rank\": \"1\"\n}",
+					"url": "localhost:56728/stories/backlog/1",
+					"headers": [{
+						"enabled": true,
+						"name": "Accept",
+						"value": "application/json"
+					},
+					{
+						"enabled": true,
+						"name": "Content-Type",
+						"value": "application/json"
+					}],
+					"url-query-params": [],
+					"protocol": "HTTP",
+					"formBody": {
+						"overrideContentType": true
+					},
+					"method": {
+						"link": "http://www.w3.org/Protocols/rfc2616/rfc2616-sec9.html#sec9.3",
+						"name": "GET"
+					},
+					"body-type": "Text",
+					"headers-type": "Form"
+				},
+				"modified": "Wed, 19 Jun 2013 22:46:04 +0200"
+			},
+			{
+				"id": "33223BD3-D977-49C7-B3C7-576BF0A74DB7",
+				"name": "5 - Backlog Stories Ranking",
+				"request": {
+					"textBody": "{\n \"Rank\": \"1000\"\n}",
+					"url": "localhost:56728/stories/1/rank",
+					"headers": [{
+						"enabled": true,
+						"name": "Accept",
+						"value": "application/json"
+					},
+					{
+						"enabled": true,
+						"name": "Content-Type",
+						"value": "application/json"
+					}],
+					"url-query-params": [],
+					"protocol": "HTTP",
+					"formBody": {
+						"overrideContentType": true
+					},
+					"method": {
+						"requestBody": true,
+						"link": "http://www.w3.org/Protocols/rfc2616/rfc2616-sec9.html#sec9.6",
+						"name": "PUT"
+					},
+					"body-type": "Text",
+					"headers-type": "Form"
+				},
+				"modified": "Wed, 19 Jun 2013 22:48:54 +0200"
+			},
+			{
+				"id": "DD400502-4667-47EB-A21B-3F8B894ACAA0",
+				"name": "6 - Backlog Stories Reset Ranking",
+				"request": {
+					"textBody": "{\n \"Rank\": \"1000\"\n}",
+					"url": "localhost:56728/stories/1/rank",
+					"headers": [{
+						"enabled": true,
+						"name": "Accept",
+						"value": "application/json"
+					},
+					{
+						"enabled": true,
+						"name": "Content-Type",
+						"value": "application/json"
+					}],
+					"url-query-params": [],
+					"protocol": "HTTP",
+					"formBody": {
+						"overrideContentType": true
+					},
+					"method": {
+						"link": "http://www.w3.org/Protocols/rfc2616/rfc2616-sec9.html#sec9.7",
+						"name": "DELETE"
+					},
+					"body-type": "Text",
+					"headers-type": "Form"
+				},
+				"modified": "Wed, 19 Jun 2013 22:49:12 +0200"
+			},
+			{
+				"id": "47AFB29D-E4AD-400A-A6AE-29CA0091436C",
+				"name": "7 - Backlog Stories Reset Estimation",
+				"request": {
+					"textBody": "{\n \"Points\": \"15\"\n}",
+					"url": "localhost:56728/stories/1/estimation",
+					"headers": [{
+						"enabled": true,
+						"name": "Accept",
+						"value": "application/json"
+					},
+					{
+						"enabled": true,
+						"name": "Content-Type",
+						"value": "application/json"
+					}],
+					"url-query-params": [],
+					"protocol": "HTTP",
+					"formBody": {
+						"overrideContentType": true
+					},
+					"method": {
+						"requestBody": true,
+						"link": "http://www.w3.org/Protocols/rfc2616/rfc2616-sec9.html#sec9.6",
+						"name": "PUT"
+					},
+					"body-type": "Text",
+					"headers-type": "Form"
+				},
+				"modified": "Wed, 19 Jun 2013 22:50:12 +0200"
+			},
+			{
+				"id": "D44D4601-589D-4CCD-8AFB-677C2856F931",
+				"name": "8 - Backlog Stories Update",
+				"request": {
+					"textBody": "{\n \"Text\": \"As a bbv forum rest fan...\"\n}",
+					"url": "localhost:56728/stories/backlog/1",
+					"headers": [{
+						"enabled": true,
+						"name": "Accept",
+						"value": "application/json"
+					},
+					{
+						"enabled": true,
+						"name": "Content-Type",
+						"value": "application/json"
+					}],
+					"url-query-params": [],
+					"protocol": "HTTP",
+					"formBody": {
+						"overrideContentType": true
+					},
+					"method": {
+						"requestBody": true,
+						"link": "http://www.w3.org/Protocols/rfc2616/rfc2616-sec9.html#sec9.6",
+						"name": "PUT"
+					},
+					"body-type": "Text",
+					"headers-type": "Form"
+				},
+				"modified": "Wed, 19 Jun 2013 22:51:38 +0200"
+			},
+			{
+				"id": "A112B050-EFB2-4763-9F7C-B66CC841A8F7",
+				"name": "9 - Backlog Stories Move",
+				"request": {
+					"textBody": "",
+					"url": "localhost:56728/stories/backlog/1/progress",
+					"headers": [{
+						"enabled": true,
+						"name": "Accept",
+						"value": "application/json"
+					},
+					{
+						"enabled": true,
+						"name": "Content-Type",
+						"value": "application/json"
+					}],
+					"url-query-params": [],
+					"protocol": "HTTP",
+					"formBody": {
+						"overrideContentType": true
+					},
+					"method": {
+						"requestBody": true,
+						"link": "http://www.w3.org/Protocols/rfc2616/rfc2616-sec9.html#sec9.6",
+						"name": "PUT"
+					},
+					"body-type": "Text",
+					"headers-type": "Form"
+				},
+				"modified": "Wed, 19 Jun 2013 22:52:46 +0200"
+			},
+			{
+				"id": "F571AA04-EF04-4A95-8F66-3D528166064C",
+				"name": "10 - Backlog Stories Wip",
+				"request": {
+					"textBody": "",
+					"url": "localhost:56728/stories/wip/1",
+					"headers": [{
+						"enabled": true,
+						"name": "Accept",
+						"value": "application/json"
+					},
+					{
+						"enabled": true,
+						"name": "Content-Type",
+						"value": "application/json"
+					}],
+					"url-query-params": [],
+					"protocol": "HTTP",
+					"formBody": {
+						"overrideContentType": true
+					},
+					"method": {
+						"link": "http://www.w3.org/Protocols/rfc2616/rfc2616-sec9.html#sec9.3",
+						"name": "GET"
+					},
+					"body-type": "Text",
+					"headers-type": "Form"
+				},
+				"modified": "Wed, 19 Jun 2013 22:53:17 +0200"
+			},
+			{
+				"id": "2CF0763C-99BC-4635-8D7A-92AA73834506",
+				"name": "11- Backlog Stories Done",
+				"request": {
+					"textBody": "",
+					"url": "localhost:56728/stories/wip/1/progress",
+					"headers": [{
+						"enabled": true,
+						"name": "Accept",
+						"value": "application/json"
+					},
+					{
+						"enabled": true,
+						"name": "Content-Type",
+						"value": "application/json"
+					}],
+					"url-query-params": [],
+					"protocol": "HTTP",
+					"formBody": {
+						"overrideContentType": true
+					},
+					"method": {
+						"requestBody": true,
+						"link": "http://www.w3.org/Protocols/rfc2616/rfc2616-sec9.html#sec9.6",
+						"name": "PUT"
+					},
+					"body-type": "Text",
+					"headers-type": "Form"
+				},
+				"modified": "Wed, 19 Jun 2013 22:53:48 +0200"
+			}]
+		}
+	},
+	"version": 2,
+	"modified": "Wed, 19 Jun 2013 22:53:48 +0200"
+}
